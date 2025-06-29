@@ -1,0 +1,107 @@
+.home-container {
+  max-width: 500px;
+  margin: 75px auto;
+  padding: 42px 36px 32px 36px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 36px rgba(25, 118, 210, 0.13), 0 2px 8px rgba(40,60,120,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-container h2 {
+  margin-bottom: 18px;
+  font-size: 2.2rem;
+  color: #1976d2;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.admin-label {
+  color: #fff;
+  background: #1976d2;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  box-shadow: 0 1.5px 6px rgba(25,118,210,0.11);
+}
+.user-label {
+  color: #fff;
+  background: #43a047;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  box-shadow: 0 1.5px 6px rgba(67,160,71,0.11);
+}
+
+.home-details {
+  width: 100%;
+  margin-bottom: 28px;
+  background: #f5faff;
+  border: 1.5px solid #cbe3fc;
+  border-radius: 12px;
+  padding: 20px 18px 14px 18px;
+  font-size: 1.08rem;
+  box-shadow: 0 1px 4px rgba(25,118,210,0.04);
+}
+
+.home-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.home-details td.key {
+  font-weight: 600;
+  color: #1976d2;
+  text-transform: capitalize;
+  width: 140px;
+  letter-spacing: 0.5px;
+  padding: 8px 8px 8px 0;
+}
+
+.home-details td.value {
+  color: #173a5e;
+  padding: 8px 0 8px 8px;
+  word-break: break-word;
+}
+
+.home-details tr:not(:last-child) td {
+  border-bottom: 1px solid #e3e9ef;
+}
+
+.logout-btn {
+  background: linear-gradient(90deg, #1976d2 70%, #1565c0 100%);
+  color: #fff;
+  border: none;
+  padding: 12px 38px;
+  border-radius: 10px;
+  font-size: 1.13rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-top: 0;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 10px rgba(25, 118, 210, 0.07);
+}
+
+.logout-btn:hover {
+  background: linear-gradient(90deg, #135bb0 70%, #0d47a1 100%);
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    padding: 20px 6px 12px 6px;
+    max-width: 99vw;
+  }
+  .home-details {
+    padding: 8px 2px 6px 2px;
+    font-size: 0.98rem;
+  }
+}
